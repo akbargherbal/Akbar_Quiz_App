@@ -1,10 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
-html {background-color: rgb(40, 6, 45);}
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+html {background-color: black;}
 
 body {
     background: black;
@@ -161,7 +161,7 @@ start media query here!
     .answer {
         display : flex;
         font-size: calc(1rem + 0.75vw);
-        padding: 1rem 2rem;
+        padding: 1rem 4rem;
         font-family: Arial, Helvetica, sans-serif;
     }
     
@@ -175,10 +175,13 @@ start media query here!
 }
 
 
-#answer_text_box
-{
+#answer_text_box {
     font-size: calc(1rem + 0.75vw);
     color: darkred;
+}
+
+#quiz_no {
+    color: rgb(23, 58, 23);
 }
 
 /* 

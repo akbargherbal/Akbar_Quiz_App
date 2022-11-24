@@ -1,3 +1,21 @@
+let language = 'ar';
+if (language === 'ar') {
+    document.documentElement.lang = 'ar';
+    document.documentElement.dir = 'rtl';
+    document.querySelector('html').style.fontSize = '18px';
+    document.getElementById('quiz_no').textContent = 'السؤال 1 من 20';
+    document.getElementById('answer_text_box').placeholder = 'الإجابة؟';
+    document.getElementById('answer_submit_button').value = 'تأكيد';
+
+    document.getElementById('current_score').textContent = 'النقاط : 0'
+    document.getElementById('correct').textContent = 'إجابات صحيحة : 0'
+    document.getElementById('wrong').textContent =' إجابات خاطئة : 0'
+
+    // document.getElementById('question_text').style.fontFamily = 'Amiri Roboto Helvetica Arial';
+
+
+    console.log('The Language of this Document is Arabic!');} else {console.log('Not Arabic')}
+
 const question_set = [
 {'QUESTION_TEXT': 'Canler remained behind, with the other Two Rivers lads, ready to l _ _ _  them from the Black Tower in an escape attempt if something went wrong tonight. It made sense to leave him, despite his protests. He had a family. [4 Letters L _ _ _ ]',
 'OPTION_1': 'lead',
@@ -38,7 +56,7 @@ function runEvent(e) {
 }
 ansewr_area.addEventListener('onSubmit', runEvent);
 
-
+console.log(`Read from file: ${some_var_in_script_tag} and its type: ${typeof some_var_in_script_tag}`);
 console.log('Finish Debugging')
 
 /* console.log('Start Debugging!')
@@ -56,3 +74,6 @@ val = val.append(p_append)
 console.log('End of Debugging!')
 console.log('----------------')
  */
+
+
+
