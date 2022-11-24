@@ -1,0 +1,12 @@
+450
+850
+
+------------
+container
+	quiz					@ flex grow
+		quiz_no
+		quiz_text			@ flex grow
+		answer + button
+		score
+	navbar
+		home + exit

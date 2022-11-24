@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Quiz_App_Grid</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="question_number">
+      <h2>
+        Question 1 of 10
+      </h2>
+    </div>
+
+      <div class="question_text">
+        <p id="q_text">
+        </p>
+      </div>
+
+      <div class="user_answer">
+        <input type="text" placeholder="Enter your answer", class="answer_text">
+        <input type="button" value="Answer",  class="submit_button">
+      </div>
+
+      <div class="score">
+        <h3 class="current_score">Current Score:</h3>
+        <h3 class="correct_answers">Correct Answers</h3>
+        <h3 class="wrong_answers">Wrong Answers</h3>
+      </div>
+    
+
+
+  </div>
+  <div class="nav">
+    <button class="home">Home</button>
+    <button class="exit">Exit</button>
+  </div>
+
+
+<py-script output="q_text">
+import os
+print('Current Working Directory:')
+os.getcwd()
+print('Some stuff')
+</py-script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+html {height: 100%;}
+body {background-color: black;
+      color: white;
+      font-family: Roboto, Helvetica, sans-serif;
+      font-size: 16px;
+      text-align: center;
+      position: relative;
+      min-height: 100%;
+      }
+
+      
+.container {
+    margin: 1%;
+    background-color: rgb(62, 4, 62);
+    display: grid;
+    overflow: auto;
+    grid-template-areas:
+"H H H H H H H H H H H H"
+"Q Q Q Q Q Q Q Q Q Q Q Q"
+"A A A A A A A A A A A A"
+"S S S S S S S S S S S S";
+
+            }
+
+.question_number  {
+    grid-area: H;
+    align-items: center;
+    }
+
+.question_text {
+    grid-area: Q;
+    text-align: justify;
+    margin: 2% ;
+    line-height: 1.5;
+    }
+#q_text{
+    font-size: calc(1em + 0.3vh);
+    }
+
+.user_answer  {
+    grid-area: A;
+    width: 100%;
+    }
+
+.score {
+    grid-area: S;
+    align-self: center;
+    }    
+
+.score > * {
+    align-items: center;
+    display: inline-block;
+    margin: 1% 5%;
+    }    
+
+
+.nav {
+    /* height: auto; */
+    align-items: center;
+    margin: 2%;
+    min-height: 10% !important;
+    overflow: auto;
+    } 
+/* 
+ALL STYLES BELOW ARE COPIED FROM SOMEWHERE!
+*/
+
+.home, .exit {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+    font-size: calc(1em + 1vw);
+    font-weight: 400;
+    color: rgb(43, 108, 176);
+    border: 1px solid rgb(66, 153, 225);
+    line-height: 26px;
+    margin: 0 2% 0 0;
+    }
+
+
+.submit_button {
+    background-color:hwb(49 8% 12%);
+    border-radius:4px;
+    border:1px solid hwb(49 2% 49%);
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size: calc(1em + 1vw);
+    font-weight:bold;
+    padding: 1% 0.5% 1% 0.5% ;
+    }
+
+.submit_button:hover {
+    background-color:#33ae37df;
+}
+
+.answer_text {
+    font-size: calc(1em + 1vw);
+    font-weight: 400;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: 1% 0.5% 1% 0.5% ;
+    margin-right: 1%;
+    width: 60%;
+    }
+
+.answer_text:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+
