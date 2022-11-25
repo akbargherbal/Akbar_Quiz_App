@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Akbar Quiz</title>
+</head>
+<body>
+  <div class="main">
+    <div class="quiz">
+      <div class="quiz_no">
+        <heading id="quiz_no">Question 1 of 20</heading>
+      </div>
+      <div class="question_text" id="question_text">قال عيسى ابن مريم اللهم ربنا أنزل علينا مائدة من السماء تكون لنا عيدا لأولنا وآخرنا وآية منك وارزقنا وأنت خير الرازقين
+        قال الله إني منزلها عليكم فمن يكفر بعد منكم فإني أعذبه عذابا لا أعذبه أحدا من العالمين
+        ما قلت لهم إلا ما أمرتني به أن اعبدوا الله ربي وربكم وكنت عليهم شهيدا ما دمت فيهم فلما توفيتني كنت أنت الرقيب عليهم وأنت على كل شيء شهيد
+        ما قلت لهم إلا ما أمرتني به أن اعبدوا الله ربي وربكم وكنت عليهم شهيدا ما دمت فيهم فلما توفيتني كنت أنت الرقيب عليهم وأنت على كل شيء شهيد
+        ما قلت لهم إلا ما أمرتني به أن اعبدوا الله ربي وربكم وكنت عليهم شهيدا ما دمت فيهم فلما توفيتني كنت أنت الرقيب عليهم وأنت على كل شيء شهيد
+        ما قلت لهم إلا ما أمرتني به أن اعبدوا الله ربي وربكم وكنت عليهم شهيدا ما دمت فيهم فلما توفيتني كنت أنت الرقيب عليهم وأنت على كل شيء شهيد
+  
+      </div>
+      <div class="answer">
+        <input type="text" placeholder="Enter your answer" class="answer_text" id="answer_text_box">
+        <input type="button" value="Answer"  class="submit_button" id="answer_submit_button">
+      </div>
+      <div class="score">
+        <div class="current_socre" id="current_score">Current Score:</div>
+        <div class="correct" id="correct">Correct Answers:</div>
+        <div class="wrong" id="wrong">Wrong Answers:</div>
+      </div>
+    </div>
+    <div class="nav">
+      <button class="home">Home</button>
+      <button class="exit">Exit</button>
+    </div>
+  </div>
+<div class="user_answer" id="user_answer_for_js"></div>
+<script src="app.js"></script>
+</body>
+</html>

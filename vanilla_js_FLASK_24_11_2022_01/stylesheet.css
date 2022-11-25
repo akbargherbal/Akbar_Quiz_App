@@ -177,11 +177,13 @@ start media query here!
 #answer_text_box {
     font-size: calc(1rem + 0.75vw);
     color: darkred;
+    flex-basis: 80%;
 }
 
 #quiz_no {
     color: rgb(23, 58, 23);
 }
+
 
 /* 
 smartphone 450px
